@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  background-color: #1d1d1d;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  min-width: 700px;
+  min-height: 100vh;
+  background-color: #2d2d2d;
+  margin-left: 50px;
+}
+
+.lessons-list {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lessons-list__lesson {
+  padding-left: 32px;
+  font-size: 48px;
+  color: rgb(104, 202, 233);
+  text-decoration: none;
+}
+
+.lessons-list__lesson::before {
+  content: '    ';
+  width: 16px;
+  height: 16px;
+  background-color: teal;
+}
+
+.lessons-list__lesson:hover {
+  background-color: #3d3d3d;
+}
