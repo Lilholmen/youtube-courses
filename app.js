@@ -8,6 +8,7 @@ const lessons = [
   '03-slider',
   '04-board',
   '05-aim-game',
+  '06-search-field',
 ];
 
 generateLinks();
